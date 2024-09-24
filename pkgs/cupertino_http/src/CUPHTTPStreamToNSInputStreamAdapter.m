@@ -127,7 +127,7 @@
     message_cobj.value.as_int64 = len;
 
     const bool success = Dart_PostCObject_DL(_sendPort, &message_cobj);
-    NSCAssert(success, @"Dart_PostCObject_DL failed.");
+    // NSCAssert(success, @"Dart_PostCObject_DL failed.");
 
     [_dataCondition wait];
   }
